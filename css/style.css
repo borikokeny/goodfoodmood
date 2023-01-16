@@ -21,6 +21,20 @@ h1 {
   border-radius: 1rem;
 }
 
+.group-results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.group-result {
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 200px;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+
 .image {
   background-size: cover;
   width: 190px;
@@ -28,7 +42,7 @@ h1 {
 }
 
 .specific-image {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -36,7 +50,7 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.specific-title {
+.specific-title { 
   font-size: large;
 }
 

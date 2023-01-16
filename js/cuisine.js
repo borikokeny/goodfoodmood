@@ -3,8 +3,8 @@ const resultsContainer = document.querySelector(".results");
 const x = {
 	method: 'GET',
 	headers: {
-		'X-API-Key': '1',
-		'X-API-Host': 'www.themealdb.com'
+		'X-RapidAPI-Key': '0d16881974mshb10bb68b2ec1d54p1e4c71jsnecf221038b88',
+    'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
 	}
 };
 
