@@ -20,9 +20,7 @@ async function getResult() {
 
     listContainer.innerHTML = "";
 
-    const facts = results.recipes;
-
-    
+    let facts = results.recipes;
 
     facts.forEach(function(searchResults) {
       listContainer.innerHTML += `<div class="result">
@@ -46,8 +44,7 @@ async function getResult() {
 
        facts = filteredRecipes;
 
-       getResult();
-    
+       getResult();    
     };
 
   }
