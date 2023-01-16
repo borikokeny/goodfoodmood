@@ -20,9 +20,6 @@ async function getSome() {
 
     const facts = results.results;
 
-    // const moreFacts = facts;
-    // console.log(moreFacts);
-
     facts.forEach(function(cuisine) {
       resultsContainer.innerHTML += `<div class="result">
                                       <div class="image" style="background-image:       

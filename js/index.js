@@ -8,7 +8,7 @@ const a = {
 
 const resultsContainer = document.querySelector(".results");
 
-const b = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=comfort";
+const b = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=wrap";
 
 async function getTwo() {
 
