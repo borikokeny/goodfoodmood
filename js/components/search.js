@@ -11,11 +11,11 @@ const search = document.querySelector(".search");
 
 const searchList = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=wrap";
 
-async function getResult() {
+async function getResult(){
 
   try {
-    const response = await fetch(searchList, searchHeader);
-    const results = await response.json();
+    let response = await fetch(searchList, searchHeader);
+    let results = await response.json();
     // console.log(results);
 
     listContainer.innerHTML = "";
@@ -28,25 +28,6 @@ async function getResult() {
                                    </h4>
                                    </div>`;
     });
-
-    search.onkeyup = function (event) {
-      // console.log(event);
-    
-      const searchValue = event.target.value.trim().toLowerCase();
-    
-      const filteredRecipes = facts.filter(function (searchResults) {
-        if (searchResults.title.toLowerCase().startsWith(searchValue)) {
-          return true;
-        }
-      });
-    
-       console.log(filteredRecipes);
-
-       facts = filteredRecipes;
-
-       getResult();    
-    };
-
   }
   catch(error) {
     console.log("An error occured");
@@ -56,8 +37,30 @@ async function getResult() {
 
 getResult();
 
+// const form = document.querySelector("#searchForm");
 
+//       form.onsubmit = function (event) {
 
+//          event.preventDefault();
+//          console.log(event);
+//       }; 
 
+search.onkeyup = function(event) {
+        // console.log(event);
+
+      const searchValue = event.target.value.trim().toLowerCase();
+  
+      const filteredRecipes = facts.filter(function (searchResults) {
+        if (searchResults.title.toLowerCase().startsWith(searchValue)) {
+          return true;            
+        }
+      });
+      
+      console.log(filteredRecipes);
+    
+      facts = filteredRecipes;
+    
+      getResult();
+};
 
 // https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/autocomplete?query=chicken&number=10

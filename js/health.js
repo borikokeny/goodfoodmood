@@ -8,7 +8,7 @@ const options = {
 
 const resultsContainer = document.querySelector(".results");
 
-const urlX = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?query=burger&diet=vegetarian&excludeIngredients=coconut&intolerances=egg%2C%20gluten&number=10&offset=0&type=main%20course";
+const urlX = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=salad";
 
 async function getSome() {
   try {
@@ -18,12 +18,12 @@ async function getSome() {
   
     resultsContainer.innerHTML = "";
 
-    const facts = results.results;
+    const facts = results.recipes;
 
     facts.forEach(function(cuisine) {
       resultsContainer.innerHTML += `<div class="result">
                                       <div class="image" style="background-image:       
-                                      url(https://spoonacular.com/recipeImages/${cuisine.image})"></div>
+                                      url(${cuisine.image})"></div>
                                       <div>${cuisine.title}</div>
                                       </div>`;
     });
@@ -36,4 +36,5 @@ async function getSome() {
 
 getSome();
 
+// https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?query=burger&diet=vegetarian&excludeIngredients=coconut&intolerances=egg%2C%20gluten&number=10&offset=0&type=main%20course
 
