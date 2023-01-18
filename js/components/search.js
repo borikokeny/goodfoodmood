@@ -1,3 +1,6 @@
+import { renderRecipes } from "./renderRecipes.js";
+import { searchRecipes } from "./searchRecipes.js";
+
 const searchHeader = {
 	method: 'GET',
 	headers: {
@@ -6,61 +9,20 @@ const searchHeader = {
 	}
 };
 
-const listContainer = document.querySelector(".results");
-const search = document.querySelector(".search");
+const searchList = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=salad";
 
-const searchList = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=wrap";
-
-async function getResult(){
-
+async function getRecipes(){
   try {
     let response = await fetch(searchList, searchHeader);
     let results = await response.json();
-    // console.log(results);
+    console.log(results);
 
-    listContainer.innerHTML = "";
-
-    let facts = results.recipes;
-
-    facts.forEach(function(searchResults) {
-      listContainer.innerHTML += `<div class="result">
-                                   <h4>${searchResults.title} 
-                                   </h4>
-                                   </div>`;
-    });
-  }
-  catch(error) {
+    renderRecipes(results.recipes);
+    searchRecipes(results.recipes);
+  } catch (error) {
     console.log("An error occured");
-    listContainer.innerHTML = displayError("An error occured when calling the API");
+    recipeContainer.innerHTML = displayError("An error occured when calling the API");
   }
 }
 
-getResult();
-
-// const form = document.querySelector("#searchForm");
-
-//       form.onsubmit = function (event) {
-
-//          event.preventDefault();
-//          console.log(event);
-//       }; 
-
-search.onkeyup = function(event) {
-        // console.log(event);
-
-      const searchValue = event.target.value.trim().toLowerCase();
-  
-      const filteredRecipes = facts.filter(function (searchResults) {
-        if (searchResults.title.toLowerCase().startsWith(searchValue)) {
-          return true;            
-        }
-      });
-      
-      console.log(filteredRecipes);
-    
-      facts = filteredRecipes;
-    
-      getResult();
-};
-
-// https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/autocomplete?query=chicken&number=10
+getRecipes();
