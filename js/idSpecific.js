@@ -41,5 +41,7 @@ function createHtml(what) {
                                   <div class="specific-image" style="background-image: 
                                    url(${what.image})"></div>
                                   <div class="specific-title">${what.title}</div>
+                                  <div class="specific-title">Prep & Cook: ${what.readyInMinutes} min</div>
+                                  <div class="specific-title">${what.instructions}</div>
                                   </div>`;
 };

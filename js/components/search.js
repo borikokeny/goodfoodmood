@@ -9,8 +9,7 @@ const searchHeader = {
 	}
 };
 
-const searchList = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=salad";
-
+const searchList = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=100&tags=dinner";
 async function getRecipes(){
   try {
     let response = await fetch(searchList, searchHeader);
