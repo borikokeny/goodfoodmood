@@ -10,7 +10,8 @@ const searchHeader = {
 };
 
 const searchList = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=100&tags=dinner";
-async function getRecipes(){
+
+async function getRecipes() {
   try {
     let response = await fetch(searchList, searchHeader);
     let results = await response.json();
@@ -18,6 +19,7 @@ async function getRecipes(){
 
     renderRecipes(results.recipes);
     searchRecipes(results.recipes);
+    
   } catch (error) {
     console.log("An error occured");
     recipeContainer.innerHTML = displayError("An error occured when calling the API");
