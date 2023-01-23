@@ -7,20 +7,38 @@ const options = {
 };
 
 const resultsContainer = document.querySelector(".results");
+const groupTittel = document.querySelector(".group-tittel");
 
-const urlX = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=asian";
+const urlX = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=asian`;
+
+
 
 async function getSome() {
+
   try {
     const response = await fetch(urlX, options);  
     const results = await response.json();
     console.log(results);
-  
+
     resultsContainer.innerHTML = "";
 
     const facts = results.recipes;
 
     const factsToRender = facts;
+
+    for(let i = 0; i < factsToRender.length; i++) {
+      groupTittel.innerHTML = `<div class="group-tittel">The best ${factsToRender[0].cuisines[1]} recipes</div>`;
+    }
+
+    const queryString = document.location.search;
+
+const params = new URLSearchParams(queryString);
+
+const cuisineValue = factsToRender[0].cuisines[1];
+
+console.log(factsToRender[0].cuisines[1]);
+
+
 
     factsToRender.forEach(function(cuisine) {
       resultsContainer.innerHTML += `<a href="idSpecific.html?id=${cuisine.id}" class="result">
@@ -64,5 +82,4 @@ factsToRender = filteredRecipes;
 getResult();
 };
 
-// https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?query=burger&diet=vegetarian&excludeIngredients=coconut&intolerances=egg%2C%20gluten&number=10&offset=0&type=main%20course
 

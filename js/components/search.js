@@ -9,7 +9,7 @@ const searchHeader = {
 	}
 };
 
-const searchList = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=100";
+const searchList = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=100&tags=mexican";
 
 async function getRecipes() {
   try {
