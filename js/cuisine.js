@@ -46,6 +46,3 @@ async function getFood() {
 }
 
 getFood();
-
-// https://cat-fact.herokuapp.com/facts
-// </div>${recipe.description}</div>

@@ -16,10 +16,7 @@
         <li><a href="Ingredients.html">Ingredients</a></li>
         <li><a href="cuisine.html" class="active">Cuisines</a></li>
         <li><a href="health.html">Health & Diets</a></li>
-        <p>
-          <input class="search" placeholder="shrimp, keto, soups..."/>
-          <div class="list-container"></div>
-        </p>
+        <button onclick="window.location.href='search.html';" class="search-button">search</button>
       </ul>
     </nav>
   </header>
@@ -27,16 +24,17 @@
     <h1>World Wide Cuisines</h1>
     <h2>Eat international</h2>
     <div class="group-results">
-      <div class="group-result asian">Asian dinners</div>
-      <div class="group-result keto">10 tasty Mexican recipes for dinner</div>
-      <div class="group-result mediterranean">Yummiest Greek recipes</div>
-      <div class="group-result gluten">Easy Italian kitchen</div>
+      <div class="gr-asian">Asian dinners</div>
+      <div class="group-result gr-keto">10 tasty Mexican recipes for dinner</div>
+      <div class="group-result gr-mediterranean">Yummiest Greek recipes</div>
+      <div class="group-result gr-gluten">Easy Italian kitchen</div>
     </div>
     <div class="results">
       <div class="loader"></div>
     </div>
   </div>
 <script src="js/components/displayError.js"></script>
+<script src="js/groupResults/groupAsian.js"></script>
 <script src="js/cuisine.js"></script>
 </body>
 </html>

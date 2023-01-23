@@ -26,7 +26,7 @@ async function getTwo() {
                                       <div class="image" style="background-image: url(${dish.image})"> 
                                       </div>
                                       <div>${dish.title}</div>
-                                      </div>`;
+                                      </a>`;
     });
  
   }
