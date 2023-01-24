@@ -1,3 +1,4 @@
+// ez mukodott
 
 const resultsContainer = document.querySelector(".results");
 const groupTittel = document.querySelector(".group-tittel");

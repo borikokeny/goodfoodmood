@@ -1,3 +1,5 @@
+const resultsContainer = document.querySelector(".results");
+
 const options = {
 	method: 'GET',
 	headers: {
@@ -6,31 +8,27 @@ const options = {
 	}
 };
 
-const resultsContainer = document.querySelector(".results");
-
 const urlX = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch";
 
-async function getMore() {
+async function getFood() {
   try {
     const response = await fetch(urlX, options);  
     const results = await response.json();
-    console.log(results);
   
     resultsContainer.innerHTML = "";
 
     const facts = results.results;
-    console.log(facts);
-
-    // const moreFacts = facts;
-    // console.log(moreFacts);
-
-    facts.forEach(function(cuisine) {
-      resultsContainer.innerHTML += `<a href="idSpecific.html?id=${cuisine.id}" class="result">
-                                      <div class="image" style="background-image: 
-                                       url(${cuisine.image})"></div>
-                                      <div>${cuisine.title}</div>
-                                      </a>`;
-    });
+    
+    for(let i = 0; i < facts.length; i++) {
+      if (!facts[i].image) {
+        continue;
+      }
+      resultsContainer.innerHTML += `<a href="idSpecific.html?id=${facts[i].id}" class="result">
+                                      <div class="image" style="background-image:       
+                                      url(${facts[i].image})"></div>
+                                      <div>${facts[i].title}</div>
+                                      </div>`;
+    }
   }
   catch(error) {
     console.log("An error occured");
@@ -38,6 +36,6 @@ async function getMore() {
   }
 }
 
-getMore();
+getFood();
 
 

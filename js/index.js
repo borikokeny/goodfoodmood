@@ -1,34 +1,34 @@
-const a = {
+const resultsContainer = document.querySelector(".results");
+
+const x = {
 	method: 'GET',
 	headers: {
-    'X-RapidAPI-Key': '0d16881974mshb10bb68b2ec1d54p1e4c71jsnecf221038b88',
+		'X-RapidAPI-Key': '0d16881974mshb10bb68b2ec1d54p1e4c71jsnecf221038b88',
     'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
 	}
 };
 
-const resultsContainer = document.querySelector(".results");
+const y = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=american";
 
-const b = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=wrap";
-
-async function getTwo() {
-
+async function getFood() {
   try {
-    const response = await fetch(b, a);  
+    const response = await fetch(y, x);  
     const results = await response.json();
-    console.log(results);
   
     resultsContainer.innerHTML = "";
 
     const facts = results.recipes;
 
-    facts.forEach(function(dish) {
-      resultsContainer.innerHTML += `<a href="idSpecific.html?id=${dish.id}" class="result">
-                                      <div class="image" style="background-image: url(${dish.image})"> 
-                                      </div>
-                                      <div>${dish.title}</div>
-                                      </a>`;
-    });
- 
+    for(let i = 0; i < facts.length; i++) {
+      if (!facts[i].image) {
+        continue;
+      }
+      resultsContainer.innerHTML += `<a href="idSpecific.html?id=${facts[i].id}" class="result">
+                                      <div class="image" style="background-image:       
+                                      url(${facts[i].image})"></div>
+                                      <div>${facts[i].title}</div>
+                                      </div>`;
+    }
   }
   catch(error) {
     console.log("An error occured");
@@ -36,4 +36,4 @@ async function getTwo() {
   }
 }
 
-getTwo();
+getFood();

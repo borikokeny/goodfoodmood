@@ -8,41 +8,32 @@ const x = {
 	}
 };
 
-const y = "https://www.themealdb.com/api/json/v1/1/filter.php?i=beef";
+const y = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=asian";
 
 async function getFood() {
   try {
-    const response = await fetch(y);  
-    const data = await response.json();
-    console.log(data);
+    const response = await fetch(y, x);  
+    const results = await response.json();
   
     resultsContainer.innerHTML = "";
 
-    const facts = data.meals;
-    console.log(facts);
+    const facts = results.recipes;
 
-    facts.forEach(function(food) {
-      resultsContainer.innerHTML += `<div class="result">
-                                      <div>${food.strMeal}</div>
-                                      <div class="image" style="background-image: url(${food.strMealThumb})"></div>
+    for(let i = 0; i < facts.length; i++) {
+      if (!facts[i].image) {
+        continue;
+      }
+      resultsContainer.innerHTML += `<a href="idSpecific.html?id=${facts[i].id}" class="result">
+                                      <div class="image" style="background-image:       
+                                      url(${facts[i].image})"></div>
+                                      <div class="link-title">${facts[i].title}</div>
                                       </div>`;
-    });
-  
-    // for(let i = 0; i < data.length; i++) {
-    //   console.log(data[i]);
-  
-    //   if (i === 5) {
-    //     break;
-    //   }
-  
-    //   resultsContainer.innerHTML += `<div class="result">${facts[i].sourceName}</div>`;
-    // }
+    }
   }
   catch(error) {
     console.log("An error occured");
     resultsContainer.innerHTML = displayError("An error occured when calling the API");
   }
-
 }
 
 getFood();

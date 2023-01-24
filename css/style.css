@@ -1,3 +1,11 @@
+:root {
+  --black-color: rgb(0, 0, 0);
+}
+
+ul {
+  list-style-type: none;
+}
+
 h1 {
   margin-left: 1rem;
 }
@@ -38,6 +46,11 @@ h1 {
   background: white;
   border: 1px solid grey;
   border-radius: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
 }
 
 .image {
