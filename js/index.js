@@ -18,6 +18,7 @@ async function getFood() {
     resultsContainer.innerHTML = "";
 
     const facts = results.recipes;
+    console.log(facts);
 
     for(let i = 0; i < facts.length; i++) {
       if (!facts[i].image) {
@@ -26,7 +27,7 @@ async function getFood() {
       resultsContainer.innerHTML += `<a href="idSpecific.html?id=${facts[i].id}" class="result">
                                       <div class="image" style="background-image:       
                                       url(${facts[i].image})"></div>
-                                      <div>${facts[i].title}</div>
+                                      <div class="recipe-name">${facts[i].title}</div>
                                       </div>`;
     }
   }
