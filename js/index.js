@@ -1,6 +1,6 @@
 const resultsContainer = document.querySelector(".results");
 
-const x = {
+const italianHead = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '0d16881974mshb10bb68b2ec1d54p1e4c71jsnecf221038b88',
@@ -8,11 +8,11 @@ const x = {
 	}
 };
 
-const y = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=american";
+const italianUrl = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=italian";
 
-async function getFood() {
+async function getItalian() {
   try {
-    const response = await fetch(y, x);  
+    const response = await fetch(italianUrl, italianHead);  
     const results = await response.json();
   
     resultsContainer.innerHTML = "";
@@ -37,4 +37,4 @@ async function getFood() {
   }
 }
 
-getFood();
+getItalian();

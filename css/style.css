@@ -5,6 +5,7 @@ body {
 :root {
   --black-color: rgb(0, 0, 0);
   --grey-color: rgb(126, 126, 126);
+  --white-color: rgb(255, 255, 255);
 }
 
 .upper-header {
@@ -47,14 +48,46 @@ a {
   text-decoration: underline;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 h1 {
   margin-left: 1rem;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
+.main-recipe-container {
+  max-width: 450px;
 }
+
+.main-text {
+  /* position: absolut; */
+}
+
+.text-box {
+  margin: 10px;
+  background-color: var(--white-color);
+}
+
+.main-recipe {
+  /* margin: 1rem;
+  padding: 1rem; */
+  /* max-width: 400px; */
+  /* background: white; */
+  /* border: 1px solid grey; */
+}
+
+.main-image {
+  background-size: cover;
+  /* width: 400px; */
+  height: 263px;
+}
+
+
 
 .results {
   display: flex;
@@ -111,6 +144,8 @@ h1 {
 .specific-title { 
   font-size: large;
 }
+
+
 
 .error {
   border: 1px solid darkred;
