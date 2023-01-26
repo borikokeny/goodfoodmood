@@ -8,7 +8,7 @@ const sweetHead = {
 	}
 };
 
-const sweetUrl = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=2&tags=sweets";
+const sweetUrl = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=4&tags=cake";
 
 async function getSweets() {
   try {
