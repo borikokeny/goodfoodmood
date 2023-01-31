@@ -34,7 +34,7 @@ nav {
   margin-left: 46px;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   display: flex;
   margin-bottom: 2px;
@@ -44,16 +44,16 @@ ul {
 
 header li {
   padding: 0px 6vw 0px 2vw;
-}
+} */
 
 a {
   text-decoration: none;
   color: var(--black-color);
 }
 
-.subscribe {
+/* .subscribe {
   text-decoration: underline;
-}
+} */
 
 
 
@@ -71,68 +71,84 @@ a {
   margin: 0 auto; */
 }
 
-/* .cont1{grid-area: cont1;}
-.cont2{grid-area: cont2;}
-.cont3{grid-area: cont3;} */
+.main-image {
+  background-size: cover;
+  width: 100vw;
+  height: 306px;
+  position: relative;
+}
 
+.text-box-text {
+  color: var(--black-color);
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  font-weight: bold;
+  position: absolute;
+  top: 68%;
+  left: -21%;
+  margin-left: 40vw;
+  padding-right: 2vw;
+  background-color: var(--white-color);
+}
 
-.cont2 {
-  /* display: flex;
-  flex-wrap: wrap; */
+.box-title {
+  font-size: 5vw;
 }
 
 .sweets-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
+.sweet-result {
+  width: 100vw;
+  margin-bottom: 1rem;
+  background: white;
+  border: 1px solid grey;
+}
 
+.sweet-image {
+  background-size: cover;
+  width: 100vw;
+  height: 300px;
+}
+
+.sweet-recipe-name {
+  padding: 5px;
+  font-size: 4vw;
+}
 
 h1 {
   margin-left: 1rem;
 }
 
-.main-recipe-container {
-  /* max-width: 450px; */
-}
-
-.main-text {
-  /* position: absolut; */
-}
-
-/* .text-box {
-  max-height: 90px;
-  margin: 399px 119px;
-  background-color: var(--white-color);
-  opacity: 0.8;
-} */
-
-.main-recipe {
-  margin: 1rem;
-  /* margin: 1rem;
-  padding: 1rem; */
-  /* max-width: 400px; */
+.italian-results {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  /* margin: 1rem; */
+  /* padding: 1rem; */
+  /* max-width: 200px; */
   /* background: white; */
   /* border: 1px solid grey; */
+  /* border-radius: 1rem; */
 }
 
-.main-image {
+.italian-result {
+  margin: 0.9rem;
+  /* padding: 1rem; */
+  /* max-width: 200px; */
+  width: 42vw;
+  background: white;
+  border: 1px solid grey;
+  /* border-radius: 1rem; */
+}
+
+.italian-image {
   background-size: cover;
-  width: 800px;
-  height: 546px;
-}
-
-.box-title {
-  padding-left: 180px;
-  font-size: 1.5rem;
-  color: var(--white-color);
-}
-
-.text-box-text {
-  color: var(--white-color);
-  text-transform: uppercase;
-  font-size: 3em;
-  font-weight: bold;
+  width: 42vw;
+  height: 150px;
 }
 
 .results {

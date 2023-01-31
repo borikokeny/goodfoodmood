@@ -1,4 +1,4 @@
-const resultsContainer = document.querySelector(".results");
+const resultsContainer = document.querySelector(".italian-results");
 
 const italianHead = {
 	method: 'GET',
@@ -24,8 +24,8 @@ async function getItalian() {
       if (!facts[i].image) {
         continue;
       }
-      resultsContainer.innerHTML += `<a href="idSpecific.html?id=${facts[i].id}" class="result">
-                                      <div class="image" style="background-image:       
+      resultsContainer.innerHTML += `<a href="idSpecific.html?id=${facts[i].id}" class="italian-result">
+                                      <div class="italian-image" style="background-image:       
                                       url(${facts[i].image})"></div>
                                       <div class="recipe-name">${facts[i].title}</div>
                                       </div>`;

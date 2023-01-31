@@ -8,7 +8,7 @@ const options = {
 	}
 };
 
-const url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/635350/information";
+const url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/715495/information";
 
 async function getData() {
 
@@ -32,8 +32,8 @@ async function getData() {
 getData();
 
 function createHtml(main) {
-  mainRecipeContainer.innerHTML = `<a href="idSpecific.html?id=${main.id}" class="main-recipe">
+  mainRecipeContainer.innerHTML = `<a href="idSpecific.html?id=${main.id}">
   <div class="main-image" style="background-image: 
-   url(${main.image})"><div class="text-box"><p class="text-box-text">Savory hamburger for dinner</p><div class="text-box-text box-title">${main.title}</div><div></div>
+   url(${main.image})"><p class="text-box-text box-title">Savory pizza for dinner</p><div class="text-box-text">${main.title}</div></div>
   </a>`;
 };

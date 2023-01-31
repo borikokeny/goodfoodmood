@@ -24,10 +24,10 @@ async function getSweets() {
       if (!sweets[i].image) {
         continue;
       }
-      sweetsContainer.innerHTML += `<a href="idSpecific.html?id=${sweets[i].id}" class="result">
-                                      <div class="image" style="background-image:       
+      sweetsContainer.innerHTML += `<a href="idSpecific.html?id=${sweets[i].id}" class="sweet-result">
+                                      <div class="sweet-image" style="background-image:       
                                       url(${sweets[i].image})"></div>
-                                      <div class="recipe-name">${sweets[i].title}</div>
+                                      <div class="sweet-recipe-name">${sweets[i].title}</div>
                                       </div>`;
     }
   }
