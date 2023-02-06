@@ -15,9 +15,23 @@ main {
   --white-color: rgb(255, 255, 255);
 }
 
+header {
+  position: fixed;
+  z-index: 100;
+  margin-top: -14px;
+  padding-top: 17px;
+  background-color: var(--white-color);
+}
+
 .upper-header {
   display: flex;
   align-items: flex-end;
+  background-color: var(--white-color);
+}
+
+.page-logo {
+  width: 25em;
+  margin-left: 46px;
 }
 
 .subscribe {
@@ -26,15 +40,13 @@ main {
 }
 
 nav {
+  /* position: fixed; */
+  /* z-index: 100; */
+  background-color: var(--white-color);
   border-bottom: 0.5px solid var(--grey-color);
 }
 
-.page-logo {
-  width: 25em;
-  margin-left: 46px;
-}
-
-/* ul {
+ul {
   list-style-type: none;
   display: flex;
   margin-bottom: 2px;
@@ -44,16 +56,35 @@ nav {
 
 header li {
   padding: 0px 6vw 0px 2vw;
-} */
+}
 
 a {
   text-decoration: none;
   color: var(--black-color);
 }
 
-/* .subscribe {
+.subscribe {
   text-decoration: underline;
-} */
+}
+
+.search-button {
+  margin-right: 25px;
+}
+
+.hamburger {
+  cursor: pointer;
+  border: none;
+  background-color: var(--white-color);
+}
+
+.close {
+  /* display: none; */
+  display: block;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  color: var(--black-color);
+}
 
 
 
@@ -61,6 +92,7 @@ a {
   /* display: grid; */
   display: flex;
   flex-direction: column;
+  margin-top: 12vw;
   /* grid-gap: 1em;
   grid-template-areas: 
   'cont1 cont2'
@@ -127,22 +159,13 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-  /* margin: 1rem; */
-  /* padding: 1rem; */
-  /* max-width: 200px; */
-  /* background: white; */
-  /* border: 1px solid grey; */
-  /* border-radius: 1rem; */
 }
 
 .italian-result {
   margin: 0.9rem;
-  /* padding: 1rem; */
-  /* max-width: 200px; */
   width: 42vw;
   background: white;
   border: 1px solid grey;
-  /* border-radius: 1rem; */
 }
 
 .italian-image {

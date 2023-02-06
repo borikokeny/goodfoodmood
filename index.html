@@ -11,47 +11,49 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <!-- <header>
+  <header>
     <div class="upper-header">
       <a href="index.html"><img class="page-logo" src="images/logo.jpg" alt="Good Food Mood logo" /></a>
       <a href="subscribe.html" class="subscribe">Subscribe now</a>
     </div>
 
     <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="mealsAndDishes.html">Meals & Dishes</a></li>
-        <li><a href="Ingredients.html">Ingredients</a></li>
-        <li><a href="cuisine.html">Cuisines</a></li>
-        <li><a href="health.html">Health & Diets</a></li>
-        <input onclick="window.location.href='search.html';" class="search-button" placeholder="Search">
+      <ul class="menu">
+        <li><a href="index.html" class="menuItem active">Home</a></li>
+        <li><a href="mealsAndDishes.html" class="menuItem">Meals & Dishes</a></li>
+        <li><a href="Ingredients.html" class="menuItem">Ingredients</a></li>
+        <li><a href="cuisine.html" class="menuItem">Cuisines</a></li>
+        <li><a href="health.html" class="menuItem">Health & Diets</a></li>
+        <input onclick="window.location.href='search.html';" class="menuItem search-button" placeholder="Search">
       </ul>
+      <button class="hamburger-button">
+        <i class="hamburger-bar fa fa-solid fa-bars"></i>
+        <!-- <i class="close fa fa-duotone fa-burger"></i> -->
+        <!-- <i class="close fa fa-solid fa-x"></i> -->
+      </button>
+    
+      
     </nav>
-  </header> -->
+  </header>
   <main>
     <div class="container">
       <div class="main-recipe-container">
         <div class="loader"></div>
-        <div class="text-box">
-          <!-- <p class="text-box-text">Savory hamburger for dinner</p> -->
-        </div>
       </div>
       <div class="">
-        <h2>QUICK SWEETS --></h2>
+        <a href="cuisine.html"><h2>QUICK SWEETS --></h2></a>
         <div class="sweets-container">
           <div class=" loader"></div>
         </div>
       </div>
       <div class="">
-        <h2>Easy italian recipes for tonight!</h2>
+      <h2>Easy italian recipes for tonight!</h2>
         <div class="italian-results">
           <div class="loader"></div>
         </div>
       </div>
     </div>
   </main>
-  
-
   <footer class="footer-container">
     <div>
       <a href="https://www.facebook.com">
@@ -68,16 +70,10 @@
     </a>
     </div>
   </footer>
+  <script src="js/components/hamburgerMenu.js"></script>
   <script src="js/components/displayError.js"></script>
   <script src="js/mainRecipe.js"></script>
   <script src="js/sweets.js"></script> 
   <script src="js/index.js"></script>
 </body>
 </html>
-
-   <!-- <div class="group-results">
-      <div class="group-result savory">Savory dinners</div>
-      <div class="group-result chicken">10 tasty chicken recipes for dinner</div>
-      <div class="group-result salad">Yummiest salad recipes</div>
-      <div class="group-result sweets">Easy with sweets</div>
-    </div>
