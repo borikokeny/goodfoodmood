@@ -31,8 +31,8 @@ header {
 }
 
 .page-logo {
-  width: 25em;
-  margin-left: 46px;
+  width: 65vw;
+  margin-left: 10vw;
 }
 
 .hamburger-bar {
@@ -43,7 +43,7 @@ nav {
   /* position: fixed; */
   /* z-index: 100; */
   background-color: var(--white-color);
-  border-bottom: 0.5px solid var(--grey-color);
+  /* border-bottom: 0.5px solid var(--grey-color); */
 }
 
 ul {
@@ -215,15 +215,32 @@ h1 {
 
 .specific-image {
   /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  /* top: 0;
+  left: 0; */
+  /* margin-bottom: -824px; */
+  width: 90vw;
+  height: 300px;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.specific-title { 
-  font-size: large;
+.idResult ul {
+  list-style-type: none;
+}
+
+.idResult h1 {
+  font-size: 30px;
+  margin-left: 2px;
+  margin-top: -30px;
+}
+
+.specific-sub-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.specific-instruction {
+  margin-left: 1vw;
 }
 
 .footer-container {
@@ -233,6 +250,12 @@ h1 {
   padding-left: 10px;
 }
 
+ .idResult {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin-left: 2vw;
+ }
 
 .error {
   border: 1px solid darkred;

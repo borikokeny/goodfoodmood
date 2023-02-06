@@ -1,4 +1,4 @@
-const resultsContainer = document.querySelector(".results");
+const resultsContainer = document.querySelector(".idResult");
 
 const queryString = document.location.search;
 
@@ -37,11 +37,9 @@ async function getAny() {
 getAny();
 
 function createHtml(what) {
-  resultsContainer.innerHTML = `<div class="result">
-                                  <div class="specific-image" style="background-image: 
+  resultsContainer.innerHTML = `<div class="specific-image" style="background-image: 
                                    url(${what.image})"></div>
-                                  <div class="specific-title">${what.title}</div>
-                                  <div class="specific-title">Prep & Cook: ${what.readyInMinutes} min</div>
-                                  <div class="specific-title">${what.instructions}</div>
-                                  </div>`;
+                                  <ul><li class="specific-title"><h1>${what.title}</h1></li>
+                                  <li class="specific-sub-title">Prep & Cook: ${what.readyInMinutes} min</li>
+                                  <li class="specific-instruction">${what.instructions}</li></ul>`;
 };

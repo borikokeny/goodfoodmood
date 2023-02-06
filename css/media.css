@@ -1,12 +1,29 @@
 @media (min-width: 481px) {
-  .hamburger-bar {
-    display: none;
-}
-  .menu {
-    display: block;
+
+  /* .ham-mode {
+    margin-top: 21vw;
+  } */
+
+  /* ul {
+    display: flex;
   }
 
+
+  .menu {
+    display: block;
+  } */
+
+  /* .upper-header {
+    background-color: aquamarine;
+  } */
+}
+
+@media (min-width: 801px) {
   .page-logo {
-    background-color: brown;
+    width: 40vw;
+  }
+
+  .hamburger-bar {
+    display: none;
   }
 }
