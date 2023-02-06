@@ -1,0 +1,12 @@
+@media (min-width: 481px) {
+  .hamburger-bar {
+    display: none;
+}
+  .menu {
+    display: block;
+  }
+
+  .page-logo {
+    background-color: brown;
+  }
+}

@@ -1,40 +1,14 @@
-// const navigation = document.querySelector(".menu");
-// const menu = document.querySelector(".menuItem");
-// const hamburger = document.querySelector(".hamburger");
-// const menuIcon = document.querySelector(".hamburger-bar");
-// const closeIcon = document.querySelector(".close");
-
-// function toggleHamburger() {
-//   if (navigation.classList.contains("xxx")) {
-//     navigation.classList.remove("xxx");
-//     navigation.style.display = "block";
-//     closeIcon.style.display = "none";
-//     menuIcon.style.display = "block";
-//   } else {
-//     navigation.classList.add("xxx");
-//     navigation.style.display = "none";
-//     closeIcon.style.display = "block";
-//     menuIcon.style.display = "none";
-//   }
-// }
-
-// hamburger.addEventListener("click", toggleHamburger);
-
-// menu.forEach(
-//   function(menu) {
-//     menu.addEventListener("click", toggleHamburger)
-//   }
-// )
-
-const hamButton = document.querySelector(".hamburger-button");
+const hamButton = document.querySelector(".hamburger-bar");
 const menuList = document.querySelector(".menu");
+const hamMode = document.querySelector(".main-recipe-container");
 
 hamButton.onclick = function() {
-  console.log("a");
-  // menuList.classList.toggle()
   if (menuList.style.display === "block") {
     menuList.style.display = "none";
+    hamMode.classList.remove("ham-mode");
   } else {
     menuList.style.display = "block";
+    hamMode.classList.add("ham-mode");
   }
 }
+

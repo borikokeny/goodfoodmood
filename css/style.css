@@ -26,6 +26,7 @@ header {
 .upper-header {
   display: flex;
   align-items: flex-end;
+  width: 100vw;
   background-color: var(--white-color);
 }
 
@@ -34,9 +35,8 @@ header {
   margin-left: 46px;
 }
 
-.subscribe {
-  margin-bottom: 23px;
-  margin-left: 200px;
+.hamburger-bar {
+  margin-bottom: 5vw;
 }
 
 nav {
@@ -48,14 +48,15 @@ nav {
 
 ul {
   list-style-type: none;
-  display: flex;
+  /* display: flex; */
+  width: 100vw;
   margin-bottom: 2px;
-  margin-left: -12px;
+  margin-left: -41px;
   align-items: flex-end;
 }
 
 header li {
-  padding: 0px 6vw 0px 2vw;
+  padding: 9px 6vw 0px 2vw;
 }
 
 a {
@@ -71,19 +72,14 @@ a {
   margin-right: 25px;
 }
 
-.hamburger {
+.fa-solid {
   cursor: pointer;
   border: none;
-  background-color: var(--white-color);
+  margin-left: 9px;
 }
 
-.close {
-  /* display: none; */
-  display: block;
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  color: var(--black-color);
+.ham-mode {
+  margin-top: 45vw;
 }
 
 
@@ -230,6 +226,12 @@ h1 {
   font-size: large;
 }
 
+.footer-container {
+  display: flex;
+  background-color: aqua;
+  height: 6vh;
+  padding-left: 10px;
+}
 
 
 .error {
