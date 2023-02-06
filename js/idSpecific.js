@@ -6,6 +6,8 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
+const cuisine = params.get("cuisines");
+
 console.log(id);
 
 const optione = {

@@ -25,10 +25,10 @@ export  function renderRecipes(recipeToRender){
     }
 
     recipeContainer.innerHTML += `<div class="result">
-                                  <h4>${recipeToRender[i].title} 
-                                  </h4>
                                   <div class="image" style="background-image:       
                                   url(${recipeToRender[i].image})" alt="${recipeToRender[i].title}"></div>
+                                  <h4>${recipeToRender[i].title} 
+                                  </h4>
                                   ${osszeg}
                                   ${ujOsszeg}
                                   </div>`;

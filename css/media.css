@@ -1,5 +1,7 @@
 @media (min-width: 481px) {
-
+  .idResult h1 {
+    margin-top: -8px;
+  }
   /* .ham-mode {
     margin-top: 21vw;
   } */
@@ -25,5 +27,11 @@
 
   .hamburger-bar {
     display: none;
+  }
+
+  .menu {
+    /* display: inline-block; */
+    display: flex;
+    margin-left: 30px;
   }
 }

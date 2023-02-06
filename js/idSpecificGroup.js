@@ -1,6 +1,13 @@
+const groupResults = document.querySelector(".idGroupResults");
 
-const resultsContainer = document.querySelector(".results");
-const groupTittel = document.querySelector(".group-tittel");
+const queryString = document.location.search;
+
+const params = new URLSearchParams(queryString);
+
+const title = params.get("title");
+
+console.log(title);
+
 
 
 const options = {
@@ -12,7 +19,7 @@ const options = {
 };
 
 
-const urlX = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=asian`;
+const urlX = `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=10&tags=${cuisine}`;
 
 
 async function getSome() {
@@ -29,7 +36,7 @@ async function getSome() {
     const factsToRender = facts;
 
     for(let i = 0; i < factsToRender.length; i++) {
-      groupTittel.innerHTML = `<div class="group-tittel">The best ${factsToRender[0].cuisines[1]} recipes</div>`;
+      groupTittel.innerHTML = `<div class="group-tittel">The best ${factsToRender[0].cuisines[0]} recipes</div>`;
     }
 
     factsToRender.forEach(function(cuisine) {
