@@ -29,6 +29,7 @@ header {
   align-items: flex-end;
   width: 100vw;
   background-color: var(--white-color);
+  /* text-align: center; */
 }
 
 .page-logo {
@@ -38,6 +39,16 @@ header {
 
 .hamburger-bar {
   margin-bottom: 5vw;
+}
+
+.fa-solid {
+  cursor: pointer;
+  border: none;
+  margin-left: 3vw;
+}
+
+.ham-mode {
+  margin-top: 30vh;
 }
 
 nav {
@@ -51,9 +62,8 @@ ul {
   list-style-type: none;
   /* display: flex; */
   width: 100vw;
-  margin-bottom: 2px;
-  margin-left: -41px;
-  align-items: flex-end;
+  margin: 2px 0px 2px -41px;
+  /* align-items: flex-end; */
 }
 
 header li {
@@ -82,15 +92,7 @@ a {
   margin-top: 20px;
 } */
 
-.fa-solid {
-  cursor: pointer;
-  border: none;
-  margin-left: 9px;
-}
 
-.ham-mode {
-  margin-top: 45vw;
-}
 
 
 

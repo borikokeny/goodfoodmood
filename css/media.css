@@ -1,4 +1,9 @@
 @media (min-width: 481px) {
+  
+
+
+
+
   .idResult h1 {
     margin-top: -8px;
   }
@@ -23,6 +28,7 @@
 @media (min-width: 801px) {
   .page-logo {
     width: 40vw;
+    margin-left: 10px;
   }
 
   .hamburger-bar {
@@ -32,6 +38,20 @@
   .menu {
     /* display: inline-block; */
     display: flex;
-    margin-left: 30px;
+    margin-left: -43px;
+    padding-top: 10px;
+  }
+
+  header li {
+    padding-right: 9px;
+  }
+
+  .search-button {
+    width: 11vw;
+  }
+
+  .main-image {
+    height: 480px;
+    margin-top: -208px;
   }
 }
