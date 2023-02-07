@@ -61,7 +61,7 @@ header {
 }
 
 .ham-mode {
-  margin-top: 30vh;
+  margin-top: 19vh;
 }
 
 nav {
@@ -99,7 +99,8 @@ a {
 }
 
 .active {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  font-weight: bold;
 }
 
 .subscribe {

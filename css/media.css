@@ -27,7 +27,7 @@
 
 @media (min-width: 801px) {
   .group-header {
-    padding-top: 20px;
+    padding-top: 54px;
     margin-top: -119px;
   }
 
@@ -50,6 +50,10 @@
 
   .second-nav {
     margin-left: -20px;
+  }
+
+  .third-nav {
+    margin-left: 15px;
   }
 
   .fifth-nav {
@@ -104,6 +108,6 @@
 
   .subscribe-form input {
     height: 30px;
-    width: 30vw;
+    width: 40vw;
   }
 }
