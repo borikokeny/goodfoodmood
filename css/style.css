@@ -23,20 +23,6 @@ header {
   background-color: var(--white-color);
 }
 
-.search-header {
-  margin-top: -57px;
-  margin-left: 13px;
-}
-
-.search {
-  margin-top: 30vh;
-  margin-left: 16px;
-}
-
-.search-results {
-  padding-top: 31vh;
-}
-
 .upper-header {
   display: flex;
   align-items: flex-end;
@@ -107,22 +93,9 @@ a {
   text-decoration: underline;
 }
 
-#searchForm {
-  position: fixed;
-  z-index: 100;
+.search-header {
+  margin-top: -92px;
 }
-
-.search-button {
-  margin-right: 25px;
-}
-
-.search-titles {
-  margin-top: 2px;
-}
-
-/* .search-result {
-  margin-top: 20px;
-} */
 
 .container {
   display: flex;
@@ -174,6 +147,12 @@ a {
   background-size: cover;
   width: 100vw;
   height: 300px;
+}
+
+.link-title {
+  margin-left: 8px;
+  margin-top: 2px;
+  font-weight: bold;
 }
 
 .sweet-recipe-name {
@@ -253,8 +232,8 @@ h1 {
   /* top: 0;
   left: 0; */
   /* margin-bottom: -824px; */
-  width: 90vw;
-  height: 300px;
+  width: 100vw;
+  height: 297px;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -277,9 +256,17 @@ h1 {
   margin-top: -30px;
 }
 
+.specific-title {
+  padding-top: 13px;
+}
+
 .specific-sub-title {
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+.diets {
+  display: flex;
 }
 
 .specific-instruction {

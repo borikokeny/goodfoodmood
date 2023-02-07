@@ -26,7 +26,7 @@ async function getFood() {
       resultsContainer.innerHTML += `<a href="idSpecific.html?id=${facts[i].id}" class="result">
                                       <div class="image" style="background-image:       
                                       url(${facts[i].image})"></div>
-                                      <div>${facts[i].title}</div>
+                                      <div class="link-title">${facts[i].title}</div>
                                       </a>`;
   }
 }

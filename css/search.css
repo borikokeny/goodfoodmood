@@ -1,0 +1,30 @@
+.search-header {
+  margin-top: -89px;
+  margin-left: 13px;
+  padding-bottom: 20px;
+}
+
+.search-input {
+  height: 4vh;
+  margin-top: 23vh;
+  margin-left: 16px;
+}
+
+.search-results {
+  padding-top: 31vh;
+}
+
+#searchForm {
+  position: fixed;
+  z-index: 100;
+}
+
+.search-button {
+  height: 4.5vh;
+  margin-right: 25px;
+}
+
+.search-titles {
+  margin-left: 9px;
+  margin-top: 2px;
+}
