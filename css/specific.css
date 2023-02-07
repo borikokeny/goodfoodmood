@@ -1,3 +1,8 @@
+:root {
+  --green-color: rgb(128, 159, 120, 1);
+  --violet-color: rgb(215, 201, 227);
+}
+
 .specific-image {
   /* position: absolute; */
   /* top: 0;
@@ -45,14 +50,14 @@
   padding-right: 10px;
   margin-top: 2px;
   margin-bottom: 2px;
-  background-color: rgb(128, 159, 120, 1);
+  background-color: var(--green-color);
 }
 
 .specific-info h6 {
   display: inline-block;
   padding-right: 10px;
   margin-top: -12px;
-  background-color: rgb(215, 201, 227);
+  background-color: var(--violet-color);
 }
 
 .specific-instruction {

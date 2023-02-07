@@ -10,8 +10,11 @@ main {
 
 :root {
   --black-color: rgb(0, 0, 0);
+  --dark-red-color: rgb(177, 0, 0);
+  --light-grey-color: rgb(243, 243, 243);
   --grey-color: rgb(126, 126, 126);
   --white-color: rgb(255, 255, 255);
+  --green-color: rgb(128, 159, 120, 1);
 }
 
 header {
@@ -241,15 +244,15 @@ h1 {
 }
 
 .error {
-  border: 1px solid darkred;
+  border: 1px solid var(--dark-red-color);
   padding: 1rem;
-  color: darkred;
-  background: lightgoldenrodyellow;
+  color: var(--dark-red-color);
+  background: var(--light-grey-color);
 }
 
 .loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid darkred;
+  border: 14px solid var(--light-grey-color);
+  border-top: 14px solid var(--green-color);
   border-radius: 50%;
   width: 120px;
   height: 120px;
