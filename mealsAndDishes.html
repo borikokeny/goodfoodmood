@@ -4,24 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Good Food Mood - Fast and yummie meals for every day!">
   <title>Meals & Dishes</title>
   <link href="css/style.css" rel="stylesheet" />
+  <link href="css/media.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <header>
+  <header class="group-header">
+    <div class="upper-header">
+      <div class="hamburger-bar">
+        <i class="fa fa-solid fa-bars"></i>
+      </div>
+      <a href="index.html"><img class="page-logo" src="images/logo.jpg" alt="Good Food Mood logo" /></a>
+    </div>
     <nav>
-      <ul>
+      <ul class="menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="mealsAndDishes.html" class="active">Meals & Dishes</a></li>
+        <li><a href="mealsAndDishes.html" class="second-nav active">Meals & Dishes</a></li>
         <li><a href="Ingredients.html">Ingredients</a></li>
         <li><a href="cuisine.html">Cuisines</a></li>
-        <li><a href="health.html">Health & Diets</a></li>
-        <button onclick="window.location.href='search.html';" class="search-button">search</button>
+        <li><a href="health.html" class="fifth-nav">Health & Diets</a></li>
+        <li><input onclick="window.location.href='search.html';" class="search-button" placeholder="Search"></li>
       </ul>
     </nav>
   </header>
   <div class="container">
-    <h1>Meals & Dishes</h1>
+    <h1 class="group-h1">Fast and yummie meals for the whole week</h1>
     <!-- <div class="group-results">
       <div class="group-result brunch">Best Sunday brunches</div>
       <div class="group-result soup">Soups for winter</div>
@@ -32,6 +42,23 @@
       <div class="loader"></div>
     </div>
   </div>
+  <footer class="footer-container">
+    <div>
+      <a href="https://www.facebook.com">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.instagram.com">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.youtube.com">
+        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+    </a>
+    <a href="https://twitter.com/">
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+    </a>
+    </div>
+    <a href="subscribe.html" class="subscribe footer-sub">Subscribe now</a>
+  </footer>
   <script src="js/components/displayError.js"></script>
   <script src="js/mealsAndDishes.js"></script>
 </body>
