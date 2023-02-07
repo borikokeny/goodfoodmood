@@ -3,34 +3,24 @@ export  function renderRecipes(recipeToRender){
   recipeContainer.innerHTML = "";
   
   for(let i = 0; i < recipeToRender.length; i++) {
-    
     if (!recipeToRender[i].image) {
       continue;
     }
-   
-    const szavak = recipeToRender[i].diets;
+ 
+    const diets = recipeToRender[i].diets;
 
-    let osszeg = "";
-
-    for (let i = 0; i < szavak.length; i++) {
-      osszeg = osszeg + `<h5>${szavak[i]}</h5>`;
-    }
-
-    const ujSzavak = recipeToRender[i].extendedIngredients;
-
-    let ujOsszeg = "";
-
-    for (let i = 0; i < ujSzavak.length; i++) {
-      ujOsszeg = ujOsszeg + `<h6>${ujSzavak[i].name}</h6>`;
-    }
+    for (let i = 0; i < diets.length; i++) {
+      if (!diets[i]) {
+        continue;
+      }
+    
 
     recipeContainer.innerHTML += `<a href="idSpecific.html?id=${recipeToRender[i].id}" class="result">
                                   <div class="image" style="background-image:       
                                   url(${recipeToRender[i].image})" alt="${recipeToRender[i].title}"></div>
-                                  <h4>${recipeToRender[i].title} 
-                                  </h4>
-                                  ${osszeg}
-                                  ${ujOsszeg}
+                                  <h4 class="search-titles">${recipeToRender[i].title}</h4>
+                                  <h5>${diets[0]}</h5>
                                   </a>`;
-  }
-}
+                                }
+                              }    
+  };

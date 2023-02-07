@@ -39,9 +39,29 @@ async function getAny() {
 getAny();
 
 function createHtml(what) {
+
+  const diets = what.diets;
+
+  let allDiets = "";
+
+  for(let i = 0; i < diets.length; i++) {
+    allDiets = allDiets + `<h5>${diets[i]}</h5>`;
+    console.log(diets);
+  }
+  
+    const ingredients = what.extendedIngredients;
+  
+    let allIngredients = "";
+  
+    for (let i = 0; i < ingredients.length; i++) {
+      allIngredients = allIngredients + `<h6>${ingredients[i].name}</h6>`;
+    }
+
   resultsContainer.innerHTML = `<div class="specific-image" style="background-image: 
                                    url(${what.image})"></div>
                                   <ul><li class="specific-title"><h1>${what.title}</h1></li>
                                   <li class="specific-sub-title">Prep & Cook: ${what.readyInMinutes} min</li>
+                                  <h2 class="diets">${allDiets}</h2>
+                                  <h3 class="ingredients">${allIngredients}</h3>
                                   <li class="specific-instruction">${what.instructions}</li></ul>`;
 };
