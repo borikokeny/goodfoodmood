@@ -44,7 +44,7 @@ async function getSome() {
                                       <div class="image" style="background-image:       
                                       url(${cuisine.image})"></div>
                                       <div>${cuisine.title}</div>
-                                      </div>`;
+                                      </a>`;
     });
   }
   catch(error) {

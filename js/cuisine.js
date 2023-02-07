@@ -27,7 +27,7 @@ async function getFood() {
                                       <div class="image" style="background-image:       
                                       url(${facts[i].image})"></div>
                                       <div class="link-title">${facts[i].title}</div>
-                                      </div>`;
+                                      </a>`;
     }
   }
   catch(error) {

@@ -24,13 +24,13 @@ export  function renderRecipes(recipeToRender){
       ujOsszeg = ujOsszeg + `<h6>${ujSzavak[i].name}</h6>`;
     }
 
-    recipeContainer.innerHTML += `<div class="result">
+    recipeContainer.innerHTML += `<a href="idSpecific.html?id=${recipeToRender[i].id}" class="result">
                                   <div class="image" style="background-image:       
                                   url(${recipeToRender[i].image})" alt="${recipeToRender[i].title}"></div>
                                   <h4>${recipeToRender[i].title} 
                                   </h4>
                                   ${osszeg}
                                   ${ujOsszeg}
-                                  </div>`;
+                                  </a>`;
   }
 }

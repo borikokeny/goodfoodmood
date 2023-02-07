@@ -28,7 +28,7 @@ async function getSweets() {
                                       <div class="sweet-image" style="background-image:       
                                       url(${sweets[i].image})"></div>
                                       <div class="sweet-recipe-name">${sweets[i].title}</div>
-                                      </div>`;
+                                      </a>`;
     }
   }
   catch(error) {

@@ -24,6 +24,20 @@ header {
   background-color: var(--white-color);
 }
 
+.search-header {
+  margin-top: -57px;
+  margin-left: 13px;
+}
+
+.search {
+  margin-top: 30vh;
+  margin-left: 16px;
+}
+
+.search-results {
+  padding-top: 31vh;
+}
+
 .upper-header {
   display: flex;
   align-items: flex-end;
