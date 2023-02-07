@@ -33,7 +33,7 @@
 
   .page-logo {
     width: 40vw;
-    margin-left: 10px;
+    margin-left: 18px;
   }
 
   .hamburger-bar {
@@ -74,8 +74,6 @@
     padding-top: 10vh;
   }
 
-
-
   .search-button {
     width: 11vw;
     margin-right: -15px;
@@ -84,5 +82,28 @@
   .main-image {
     height: 480px;
     margin-top: -208px;
+  }
+
+  .idResult {
+    padding-top: 2vh;
+  }
+
+  .specific-title {
+    inline-size: 50vw;
+  }
+
+  .specific-instruction {
+    margin-left: 0px;
+    inline-size: 50vw;
+  }
+
+  .subscribe-container {
+    margin-top: 17vh;
+    margin-bottom: 20vh;
+  }
+
+  .subscribe-form input {
+    height: 30px;
+    width: 30vw;
   }
 }

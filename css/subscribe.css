@@ -1,5 +1,5 @@
 .subscribe-container {
-  margin-top: 60px;
+  margin-top: 41vh;
 }
 
 .subscribe-container h1, p {
@@ -7,6 +7,7 @@
   max-width: 500px;
   margin: auto;
   margin-top: 20px;
+  padding-bottom: 5vh;
 }
 
 .subscribe-form {

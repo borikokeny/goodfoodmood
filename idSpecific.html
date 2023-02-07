@@ -4,16 +4,54 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe</title>
+  <meta name="description" content="Good Food Mood - Have a look on this delicious recipe!">  <title>Recipe</title>
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/media.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <header class="group-header">
+    <div class="upper-header">
+      <div class="hamburger-bar">
+        <i class="fa fa-solid fa-bars"></i>
+      </div>
+      <a href="index.html"><img class="page-logo" src="images/logo.jpg" alt="Good Food Mood logo" /></a>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mealsAndDishes.html" class="second-nav">Meals & Dishes</a></li>
+        <li><a href="Ingredients.html">Ingredients</a></li>
+        <li><a href="cuisine.html">Cuisines</a></li>
+        <li><a href="health.html" class="fifth-nav">Health & Diets</a></li>
+        <li><a href="subscribe.html" class="subscribe">Subscribe now</a></li>
+        <li><input onclick="window.location.href='search.html';" class="search-button" placeholder="Search"></li>
+      </ul>
+    </nav>
+  </header>
   <div class="container">
     <div class="idResult">
       <div class="loader"></div>
     </div>
   </div>
+  <footer class="footer-container">
+    <div>
+      <a href="https://www.facebook.com">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.instagram.com">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.youtube.com">
+        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+    </a>
+    <a href="https://twitter.com/">
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+    </a>
+    </div>
+    <a href="subscribe.html" class="subscribe footer-sub">Subscribe now</a>
+  </footer>
   <script src="js/components/displayError.js"></script>
   <script src="js/idSpecific.js"></script>
 </body>
