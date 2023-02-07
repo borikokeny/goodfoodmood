@@ -1,0 +1,61 @@
+.specific-image {
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  /* margin-bottom: -824px; */
+  width: 100vw;
+  height: 297px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.idResult {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  padding-top: 175px;
+  margin-left: 2vw;
+ }
+
+.idResult ul {
+  list-style-type: none;
+}
+
+.idResult h1 {
+  font-size: 30px;
+  margin-left: 2px;
+  margin-top: -30px;
+}
+
+.specific-title {
+  padding-top: 13px;
+}
+
+.specific-sub-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* .diets > h5 {
+  display: flex;
+} */
+
+.specific-info h5 {
+  display: inline-block;
+  padding-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: rgb(128, 159, 120, 1);
+}
+
+.specific-info h6 {
+  display: inline-block;
+  padding-right: 10px;
+  margin-top: -12px;
+  background-color: rgb(215, 201, 227);
+}
+
+.specific-instruction {
+  margin-left: 1vw;
+  margin-bottom: 30px;
+}

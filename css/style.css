@@ -199,7 +199,7 @@ h1 {
 }
  
 .result {
-  margin: 1rem;
+  margin: 10px;
   /* padding: 1rem; */
   max-width: 200px;
   background: var(--white-color);
@@ -227,51 +227,7 @@ h1 {
   height: 150px;
 }
 
-.specific-image {
-  /* position: absolute; */
-  /* top: 0;
-  left: 0; */
-  /* margin-bottom: -824px; */
-  width: 100vw;
-  height: 297px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
-.idResult {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90vw;
-  padding-top: 175px;
-  margin-left: 2vw;
- }
-
-.idResult ul {
-  list-style-type: none;
-}
-
-.idResult h1 {
-  font-size: 30px;
-  margin-left: 2px;
-  margin-top: -30px;
-}
-
-.specific-title {
-  padding-top: 13px;
-}
-
-.specific-sub-title {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.diets {
-  display: flex;
-}
-
-.specific-instruction {
-  margin-left: 1vw;
-}
 
 .footer-container {
   display: flex;
