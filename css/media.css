@@ -39,7 +39,7 @@
 
   .desktop-view-search {
     display: block;
-    margin-left: 33vw;
+    margin-left: 15vw;
   }
 
   .desktop-search-button {
@@ -88,11 +88,9 @@
   }
 
   .group-h1 {
-    margin-top: 42px;
+    margin-top: 70px;
   }
-
-
-
+  
   .search-input {
     margin-top: 0vh;
     width: 40vw;
