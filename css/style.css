@@ -59,6 +59,11 @@ header {
   margin-left: 3vw;
 }
 
+
+.desktop-view-search {
+  display: none;
+}
+
 .ham-mode {
   margin-top: 19vh;
 }

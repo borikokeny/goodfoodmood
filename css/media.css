@@ -32,6 +32,15 @@
     background-color: white; */
   }
 
+  .desktop-view-search {
+    display: block;
+    margin-left: 33vw;
+  }
+
+  .desktop-search-button {
+
+  }
+
   .group-header {
     padding-top: 54px;
     margin-top: -119px;
