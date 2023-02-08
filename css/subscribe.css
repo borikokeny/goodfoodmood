@@ -1,6 +1,7 @@
 
 
 .sub-header {
+  padding-top: 56px;
   margin-top: -378px;
 }
 
@@ -11,11 +12,12 @@
 }
 
 #sub-searchForm {
-  margin-left: 6px;
+  margin-left: -5px;
 }
 
 .subscribe-container {
   margin-top: 41vh;
+  padding-top: 45px;
 }
 
 .subscribe-container h1, p {
