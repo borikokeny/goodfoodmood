@@ -32,7 +32,7 @@ header {
   padding-top: 38px;
   padding-right: 3px;
   padding-bottom: 4px;
-  background-color: green;
+  background-color: var(--white-color);
 }
 
 .upper-header {
@@ -40,7 +40,7 @@ header {
   margin-top: -10px;
   align-items: flex-end;
   width: 100vw;
-  background-color: rgb(21, 255, 0);
+  background-color: var(--white-color);
   /* text-align: center; */
 }
 
@@ -78,7 +78,7 @@ nav {
 .menu {
   padding-bottom: 82px;
   padding-left: 51px;
-  background-color: red;
+  background-color: var(--white-color);
 }
 
 ul {
