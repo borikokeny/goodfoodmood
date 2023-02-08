@@ -23,9 +23,10 @@
 #searchForm {
   position: fixed;
   z-index: 100;
-  margin-top: 102px;
+  margin-left: -5px;
+  /* margin-top: 102px;
   margin-bottom: -31px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; */
 }
 
 .search-button {
