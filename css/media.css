@@ -4,6 +4,7 @@
 
   .idResult h1 {
     margin-top: -8px;
+    width: 49vw;
   }
   /* .ham-mode {
     margin-top: 21vw;
@@ -129,12 +130,16 @@
     margin-top: -208px;
   }
 
+  .spec-container {
+    margin-left: 20vw;
+  }
+
   .idResult {
     padding-top: 10vh;
   }
 
   .specific-info {
-    max-width: 50vw;
+    max-width: 45vw;
   }
 
   .specific-title {
@@ -143,7 +148,8 @@
 
   .specific-instruction {
     margin-left: 0px;
-    inline-size: 50vw;
+    inline-size: 45vw;
+    text-align: justify;
   }
 
   .subscribe-container {
