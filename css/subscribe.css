@@ -1,3 +1,19 @@
+
+
+.sub-header {
+  margin-top: -378px;
+}
+
+.sub-menu {
+  padding-bottom: 30px;
+  padding-left: 51px;
+  background-color: red;
+}
+
+#sub-searchForm {
+  margin-left: 6px;
+}
+
 .subscribe-container {
   margin-top: 41vh;
 }
@@ -19,6 +35,8 @@
   background: rgb(128, 159, 120, 1);
   border-radius: 1rem;
 }
+
+
 
 input {
   border: 1px solid gray;

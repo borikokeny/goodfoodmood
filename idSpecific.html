@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <header class="group-header">
+  <header class="header">
     <div class="upper-header">
       <div class="hamburger-bar">
         <i class="fa fa-solid fa-bars"></i>
@@ -28,11 +28,16 @@
         <li><a href="cuisine.html">Cuisines</a></li>
         <li><a href="health.html" class="fifth-nav">Health & Diets</a></li>
         <li><a href="subscribe.html" class="subscribe">Subscribe now</a></li>
-        <li><input onclick="window.location.href='search.html';" class="search-button" placeholder="Search"></li>
+        <!-- <li><input onclick="window.location.href='search.html';" class="search-button" placeholder="Search"></li> -->
       </ul>
     </nav>
   </header>
   <div class="container">
+    <form id="searchForm">
+      <input onclick="window.location.href='search.html';" class="search-button search-input" placeholder="Search">
+      <!-- <input class="search-input" placeholder="shrimp, keto, soups..."/> -->
+      <button class="search-button">Search</button>
+    </form>
     <div class="idResult">
       <div class="loader"></div>
     </div>

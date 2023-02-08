@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <header class="search-header">
+  <header class="header">
     <div class="upper-header">
       <div class="hamburger-bar">
         <i class="fa fa-solid fa-bars"></i>
@@ -21,7 +21,7 @@
       <a href="index.html"><img class="page-logo" src="images/logo.jpg" alt="Good Food Mood logo" /></a>
     </div>
     <nav>
-      <ul class="search-menu">
+      <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="mealsAndDishes.html" class="second-nav">Meals & Dishes</a></li>
         <li><a href="Ingredients.html" class="third-nav">Ingredients</a></li>
@@ -33,7 +33,8 @@
   </header>
 <div class="container">
   <form id="searchForm">
-    <input class="search-input" placeholder="shrimp, keto, soups..."/>
+    <input onclick="window.location.href='search.html';" class="search-button search-input" placeholder="Search">
+    <!-- <input class="search-input" placeholder="shrimp, keto, soups..."/> -->
     <button class="search-button">Search</button>
   </form>
   <div class="search-results results">
