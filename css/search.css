@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 100;
   width: 100%;
-  margin-top: -85px;
+  margin-top: -92px;
   padding-top: 26px;
   padding-bottom: 60px;
   background-color: var(--white-color);
@@ -33,6 +33,7 @@
   position: fixed;
   z-index: 100;
   margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .search-button {
