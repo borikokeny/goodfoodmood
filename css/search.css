@@ -3,6 +3,7 @@
   z-index: 100;
   width: 100%;
   margin-top: -92px;
+  margin-left: -9px;
   padding-top: 26px;
   padding-bottom: 60px;
   background-color: var(--white-color);
@@ -10,7 +11,7 @@
 
 .search-menu {
   padding-bottom: 20px;
-  background-color: aqua;
+  background-color: rgb(7, 110, 110);
 }
 
 /* .search-header {
