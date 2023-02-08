@@ -23,7 +23,7 @@
 
 .search-input {
   height: 4vh;
-  margin-top: 14vh;
+  margin-top: 2vh;
   margin-left: 10px;
 }
 
@@ -34,7 +34,8 @@
 #searchForm {
   position: fixed;
   z-index: 100;
-  margin-bottom: 20px;
+  margin-top: 102px;
+  margin-bottom: -31px;
   padding-bottom: 20px;
 }
 

@@ -31,7 +31,7 @@ header {
   margin-left: -9px;
   padding-top: 38px;
   padding-right: 3px;
-  padding-bottom: 30px;
+  padding-bottom: 4px;
   background-color: var(--white-color);
 }
 
@@ -71,7 +71,7 @@ nav {
 }
 
 .menu {
-  padding-bottom: 111px;
+  padding-bottom: 82px;
   background-color: var(--white-color);
 }
 
