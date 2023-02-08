@@ -35,7 +35,6 @@ header {
   background-color: green;
 }
 
-
 .upper-header {
   display: flex;
   margin-top: -10px;
@@ -95,7 +94,7 @@ header li {
 }
 
 .group-h1 {
-  margin-top: 170px;
+  margin-top: 23vh;
   margin-bottom: -23px;
 }
 
