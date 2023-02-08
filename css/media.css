@@ -47,12 +47,13 @@
   }
 
   .subscribe-container h1 {
-    margin-top: 6vh;
+    margin-top: 8vh;
   }
 
   .desktop-view-search {
     display: block;
     margin-left: 9vw;
+    margin-bottom: 16px;
   }
 
   .desktop-search-button {
