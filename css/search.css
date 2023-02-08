@@ -6,13 +6,13 @@
   margin-left: -9px;
   padding-top: 38px;
   padding-right: 3px;
-  padding-bottom: 30px;
-  background-color: var(--white-color);
+  padding-bottom: 4px;
+  background-color: green;
 }
 
 .search-menu {
-  padding-bottom: 111px;
-  background-color: var(--white-color);
+  padding-bottom: 82px;
+  background-color: red;
 }
 
 /* .search-header {
@@ -23,12 +23,12 @@
 
 .search-input {
   height: 4vh;
-  margin-top: 24vh;
+  margin-top: 14vh;
   margin-left: 10px;
 }
 
 .search-results {
-  padding-top: 28vh;
+  padding-top: 19vh;
 }
 
 #searchForm {
