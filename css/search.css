@@ -8,6 +8,10 @@
   background-color: var(--white-color);
 }
 
+.search-menu {
+  padding-bottom: 20px;
+}
+
 /* .search-header {
   margin-top: -89px;
   margin-left: 13px;
@@ -21,7 +25,7 @@
 }
 
 .search-results {
-  padding-top: 25vh;
+  padding-top: 28vh;
 }
 
 #searchForm {
