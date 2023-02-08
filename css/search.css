@@ -5,12 +5,13 @@
   margin-top: -92px;
   margin-left: -9px;
   padding-top: 26px;
+  padding-right: 3px;
   padding-bottom: 60px;
   background-color: var(--white-color);
 }
 
 .search-menu {
-  padding-bottom: 20px;
+  padding-bottom: 59px;
   background-color: rgb(7, 110, 110);
 }
 
