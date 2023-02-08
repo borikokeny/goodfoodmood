@@ -18,11 +18,20 @@ main {
 }
 
 header {
-  position: fixed;
+  /* position: fixed;
   z-index: 100;
   width: 100%;
   margin-top: -14px;
   padding-top: 17px;
+  background-color: var(--white-color); */
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  margin-top: -110px;
+  margin-left: -9px;
+  padding-top: 38px;
+  padding-right: 3px;
+  padding-bottom: 30px;
   background-color: var(--white-color);
 }
 
@@ -59,6 +68,11 @@ nav {
   /* z-index: 100; */
   background-color: var(--white-color);
   /* border-bottom: 0.5px solid var(--grey-color); */
+}
+
+.menu {
+  padding-bottom: 111px;
+  background-color: var(--white-color);
 }
 
 ul {
