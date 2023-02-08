@@ -28,6 +28,7 @@ header {
 
 .upper-header {
   display: flex;
+  margin-top: -10px;
   align-items: flex-end;
   width: 100vw;
   background-color: var(--white-color);
