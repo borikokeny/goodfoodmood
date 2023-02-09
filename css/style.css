@@ -103,10 +103,6 @@ a {
   text-decoration: underline;
 }
 
-.search-header {
-  margin-top: -92px;
-}
-
 .container {
   display: flex;
   flex-direction: column;

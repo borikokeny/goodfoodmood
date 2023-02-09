@@ -1,5 +1,6 @@
 export  function renderRecipes(recipeToRender){
   const recipeContainer = document.querySelector(".results");
+  
   recipeContainer.innerHTML = "";
   
   for(let i = 0; i < recipeToRender.length; i++) {

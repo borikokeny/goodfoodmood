@@ -9,11 +9,12 @@ export function searchRecipes(recipes) {
    
   event.preventDefault();
 
+  console.log(search.value);
+
    const searchValue = search.value.trim().toLowerCase();
    
    const filteredRecipes = recipes.filter(function (recipeToRender) {
     if (recipeToRender.title.toLowerCase().includes(searchValue)) {
-
       return true;       
     }
 
@@ -29,9 +30,9 @@ export function searchRecipes(recipes) {
       }
     }
 
-   });
+   })   
     console.log(filteredRecipes);
    renderRecipes(filteredRecipes);
-   };
-}
+  }
+};
 
