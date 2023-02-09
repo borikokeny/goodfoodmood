@@ -16,8 +16,13 @@
     padding-top: 97px;
   }
 
-  #searchForm {
+  .searchForm {
     display: none;
+  }
+
+  #searchForm {
+    margin-left: 33px;
+    margin-top: 52px;
   }
 
   #sub-searchForm {

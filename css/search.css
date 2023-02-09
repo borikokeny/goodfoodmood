@@ -12,6 +12,7 @@
   position: fixed;
   z-index: 100;
   margin-left: -5px;
+  margin-top: 10px;
 }
 
 .search-button {
