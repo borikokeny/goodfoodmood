@@ -27,10 +27,8 @@ async function getItalian() {
         continue;
       }
 
-      // sweetsLink.innerHTML = `<a href="idSpecificGroup.html?title=${facts[i].title}">sweets</a>`;
-
-      resultsContainer.innerHTML += `<a href="idSpecific.html?id=${facts[i].id}" class="italian-result">
-                                      <div class="italian-image" style="background-image:       
+      resultsContainer.innerHTML += `<a href="idSpecific.html?id=${facts[i].id}" class="result">
+                                      <div class="image" style="background-image:       
                                       url(${facts[i].image})"></div>
                                       <div class="recipe-name">${facts[i].title}</div>
                                       </a>`;

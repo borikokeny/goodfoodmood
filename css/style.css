@@ -43,7 +43,8 @@ header {
 }
 
 .hamburger-bar {
-  margin-bottom: 5vw;
+  margin-bottom: 3vw;
+  margin-left: 2vw;
 }
 
 .fa-solid {
@@ -65,7 +66,7 @@ nav {
 }
 
 .menu {
-  padding-bottom: 82px;
+  padding-bottom: 19px;
   padding-left: 51px;
   background-color: var(--white-color);
 }
@@ -169,21 +170,35 @@ h1 {
 }
 
 .italian-results {
+  /* display: flex;
+  flex-wrap: wrap;
+  width: 90vw; */
   display: flex;
   flex-wrap: wrap;
-  width: 90vw;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .italian-result {
-  margin: 0.9rem;
+  /* margin: 0.9rem;
   width: 42vw;
+  background: var(--white-color);
+  border: 1px solid var(--grey-color); */
+  margin-top: 20px;
+  margin-left: -10px;
+  margin-right: 19px;
+  margin-bottom: 20px;
+  max-width: 170px;
   background: var(--white-color);
   border: 1px solid var(--grey-color);
 }
 
 .italian-image {
-  background-size: cover;
+  /* background-size: cover;
   width: 42vw;
+  height: 150px; */
+  background-size: cover;
+  width: 170px;
   height: 150px;
 }
 
