@@ -139,7 +139,7 @@
   }
 
   .specific-info {
-    max-width: 45vw;
+    max-width: 41vw;
   }
 
   .specific-title {
@@ -148,7 +148,7 @@
 
   .specific-instruction {
     margin-left: 0px;
-    inline-size: 45vw;
+    inline-size: 39vw;
     text-align: justify;
   }
 
@@ -160,5 +160,11 @@
   .subscribe-form input {
     height: 30px;
     width: 40vw;
+  }
+}
+
+@media (min-width: 1300px) {
+  .group-h1 {
+    margin-top: 94px;
   }
 }
