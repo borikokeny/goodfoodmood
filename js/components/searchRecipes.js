@@ -5,11 +5,11 @@ export function searchRecipes(recipes) {
   const search = document.querySelector(".search");
   const searchButton = document.querySelector(".search-button");
   
-  searchButton.onclick = function() {
+  searchButton.onclick = function(event) {
    
   event.preventDefault();
 
-  console.log(search.value);
+
 
    const searchValue = search.value.trim().toLowerCase();
    
