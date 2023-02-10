@@ -20,7 +20,6 @@ async function getItalian() {
     resultsContainer.innerHTML = "";
 
     const facts = results.recipes;
-    console.log(facts);
 
     for(let i = 0; i < facts.length; i++) {
       if (!facts[i].image) {
@@ -35,7 +34,6 @@ async function getItalian() {
     }
   }
   catch(error) {
-    console.log("An error occured");
     resultsContainer.innerHTML = displayError("An error occured when calling the API");
   }
 }

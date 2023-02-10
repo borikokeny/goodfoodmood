@@ -1,3 +1,12 @@
+:root {
+  --black-color: rgb(0, 0, 0);
+  --dark-red-color: rgb(177, 0, 0);
+  --light-grey-color: rgb(243, 243, 243);
+  --grey-color: rgb(126, 126, 126);
+  --white-color: rgb(255, 255, 255);
+  --green-color: rgb(128, 159, 120, 1);
+}
+
 body {
   font-family: 'Lora', 'Times New Roman', Times, serif;
 }
@@ -6,15 +15,6 @@ main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 5px;
-}
-
-:root {
-  --black-color: rgb(0, 0, 0);
-  --dark-red-color: rgb(177, 0, 0);
-  --light-grey-color: rgb(243, 243, 243);
-  --grey-color: rgb(126, 126, 126);
-  --white-color: rgb(255, 255, 255);
-  --green-color: rgb(128, 159, 120, 1);
 }
 
 header {

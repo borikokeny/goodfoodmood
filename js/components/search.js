@@ -1,6 +1,5 @@
 import { renderRecipes } from "./renderRecipes.js";
 import { searchRecipes } from "./searchRecipes.js";
-// import { searchRecipesNew } from "./searchRecipesNew.js";
 
 
 const searchHeader = {

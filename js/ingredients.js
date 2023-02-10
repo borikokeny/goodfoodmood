@@ -31,7 +31,6 @@ async function getFood() {
     }
   }
   catch(error) {
-    console.log("An error occured");
     resultsContainer.innerHTML = displayError("An error occured when calling the API");
   }
 }

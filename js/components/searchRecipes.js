@@ -31,7 +31,7 @@ export function searchRecipes(recipes) {
     }
 
    })   
-    console.log(filteredRecipes);
+
    renderRecipes(filteredRecipes);
   }
 };

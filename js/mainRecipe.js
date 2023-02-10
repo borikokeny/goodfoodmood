@@ -24,7 +24,6 @@ async function getData() {
       
     }
     catch(error) {
-      console.log(error);
       mainRecipeContainer.innerHTML = displayError("An error occured when calling the API");
     }
   }

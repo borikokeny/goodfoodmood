@@ -1,10 +1,18 @@
+:root {
+  --black-color: rgb(0, 0, 0);
+  --dark-red-color: rgb(177, 0, 0);
+  --light-grey-color: rgb(243, 243, 243);
+  --grey-color: rgb(126, 126, 126);
+  --white-color: rgb(255, 255, 255);
+  --green-color: rgb(128, 159, 120, 1);
+}
+
 .sub-header {
   padding-top: 56px;
   margin-top: -378px;
 }
 
 .sub-menu {
-  /* padding-bottom: 30px; */
   padding-left: 51px;
   background-color: var(--white-color);
 }
@@ -31,12 +39,12 @@
   display: flex;
   flex-direction: column;
   padding: 2em;
-  background: rgb(128, 159, 120, 1);
+  background: var(--green-color);
   border-radius: 1rem;
 }
 
 input {
-  border: 1px solid gray;
+  border: 1px solid var(--grey-color);
   border-radius: 7px;
   padding: 5px;
 }
@@ -50,23 +58,9 @@ label {
 
 .form-error {
   display: none;
-  color: red;
+  color: var(--dark-red-color);
   font-size: 12px;
 }
-
-/* .send-button {
-  padding: 20px;
-  width: 15vw;
-  margin: -21px 163px 20px;
-  font-size: 20px;
-  font-weight: bold;
-  border: 1.5px solid gray;
-  border-radius: 30px;
-  background-color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-} */
 
 .send-button {
   padding: 20px;
@@ -74,9 +68,9 @@ label {
   margin: auto;
   font-size: 20px;
   font-weight: bold;
-  border: 1.5px solid gray;
+  border: 1.5px solid var(--grey-color);
   border-radius: 3px;
-  background-color: white;
+  background-color: var(--white-color);
   text-align: center;
   margin-top: 25px;
   display: flex;

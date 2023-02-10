@@ -8,7 +8,6 @@ const id = params.get("id");
 
 const cuisine = params.get("cuisines");
 
-console.log(id);
 
 const optione = {
 	method: 'GET',
@@ -31,7 +30,7 @@ async function getAny() {
     createHtml(results);
   }
   catch(error) {
-    console.log("An error occured");
+
     resultsContainer.innerHTML = displayError("An error occured when calling the API");
   }
 }
@@ -46,7 +45,6 @@ function createHtml(what) {
 
   for(let i = 0; i < diets.length; i++) {
     allDiets = allDiets + `<h5>${diets[i]}</h5>`;
-    console.log(diets);
   }
   
     const ingredients = what.extendedIngredients;

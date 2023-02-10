@@ -18,7 +18,6 @@ async function getSweets() {
     sweetsContainer.innerHTML = "";
 
     const sweets = results.recipes;
-    console.log(sweets);
 
     for(let i = 0; i < sweets.length; i++) {
       if (!sweets[i].image) {
@@ -32,7 +31,6 @@ async function getSweets() {
     }
   }
   catch(error) {
-    console.log("An error occured");
     resultsContainer.innerHTML = displayError("An error occured when calling the API");
   }
 }
