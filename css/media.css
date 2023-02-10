@@ -20,6 +20,14 @@
     display: none;
   }
 
+  .search-menu {
+    margin-bottom: 20px;
+    display: flex;
+    padding-left: 32px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+  }
+
   #searchForm {
     margin-left: 33px;
     margin-top: 52px;
