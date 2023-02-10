@@ -21,7 +21,7 @@
   }
 
   .search-menu {
-    margin-bottom: 20px;
+    margin-bottom: 10vh;
     display: flex;
     padding-left: 32px;
     padding-top: 10px;
@@ -103,7 +103,7 @@
   }
 
   .search-results {
-    padding-top: 10vh;
+    padding-top: 13vh;
   }
 
   .search-button {
