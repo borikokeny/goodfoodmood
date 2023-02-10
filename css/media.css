@@ -161,6 +161,14 @@
 
 @media (min-width: 1300px) {
   .wide-menu {
-    margin-bottom: 2px;
+    margin-bottom: 70px;
+  }
+
+  .group-h1 {
+    margin-top: 20vh;
+  }
+
+  .search-results {
+    margin-top: 7vh;
   }
 }
