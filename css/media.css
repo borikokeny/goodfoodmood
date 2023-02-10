@@ -141,6 +141,7 @@
   .subscribe-container {
     margin-top: 17vh;
     margin-bottom: 20vh;
+    padding-top: 15vh;
   }
 
   .subscribe-form input {
