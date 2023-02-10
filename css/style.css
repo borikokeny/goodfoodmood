@@ -44,7 +44,7 @@ header {
 
 .hamburger-bar {
   margin-bottom: 3vw;
-  margin-left: 2vw;
+  margin-left: 3vw;
 }
 
 .fa-solid {
@@ -67,8 +67,12 @@ nav {
 
 .menu {
   padding-bottom: 19px;
-  padding-left: 51px;
+  padding-left: 10vw;
   background-color: var(--white-color);
+}
+
+.searchForm {
+  margin-left: -1vw;
 }
 
 ul {
@@ -113,7 +117,8 @@ a {
 
 .main-image {
   background-size: cover;
-  margin-left: 4vw;
+  margin-left: auto;
+  margin-right: auto;
   width: 90vw;
   height: 306px;
   position: relative;
@@ -175,11 +180,15 @@ h1 {
   margin-left: 1rem;
 }
 
+.italian-container h2 {
+  margin-left: 3.5vw;
+}
+
 .italian-results {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 5vw;
 }
 
 .results {
