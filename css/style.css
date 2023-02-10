@@ -67,7 +67,7 @@ nav {
 
 .menu {
   padding-bottom: 19px;
-  padding-left: 10vw;
+  padding-left: 12vw;
   background-color: var(--white-color);
 }
 
@@ -188,7 +188,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
-  margin-left: 5vw;
+  margin-left: 6vw;
 }
 
 .results {
