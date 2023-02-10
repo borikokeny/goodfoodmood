@@ -158,3 +158,9 @@
     margin-bottom: 10px;
   }
 }
+
+@media (min-width: 1300px) {
+  .wide-menu {
+    margin-bottom: 2px;
+  }
+}
