@@ -4,10 +4,6 @@
 }
 
 .specific-image {
-  /* position: absolute; */
-  /* top: 0;
-  left: 0; */
-  /* margin-bottom: -824px; */
   width: 100vw;
   height: 297px;
   background-repeat: no-repeat;
@@ -40,10 +36,6 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
-
-/* .diets > h5 {
-  display: flex;
-} */
 
 .specific-info h5 {
   display: inline-block;

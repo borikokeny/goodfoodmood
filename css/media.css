@@ -149,8 +149,12 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
   .group-h1 {
     margin-top: 94px;
+  }
+
+  .wide-menu {
+    margin-bottom: 10px;
   }
 }
